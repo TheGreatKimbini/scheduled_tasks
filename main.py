@@ -1,3 +1,4 @@
+import os
 import smtplib
 import random
 import datetime as dt
