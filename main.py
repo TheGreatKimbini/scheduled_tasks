@@ -25,7 +25,7 @@ if (current_date.month, current_date.day) in b_days:
 
     print(contents)
 
-    with smtplib.SMTP("smtp.gmail.com") as connection:
+    with smtplib.SMTP("smtp.gmail.com", 587) as connection:
         connection.starttls()
         connection.login(user = my_email, password = fake_password)
         connection.sendmail(
