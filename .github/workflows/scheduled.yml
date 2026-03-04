@@ -41,6 +41,11 @@ jobs:
         env:
           # Your secrets are available as environment variables
           # Add more secrets in Settings > Secrets > Actions
-          MY_EMAIL: ${{ secrets.MY_EMAIL }}
-          MY_PASSWORD: ${{ secrets.MY_PASSWORD }}
-        run: python main.py
+          OWM_KEY: ${{ secrets.OWM_KEY }}
+          LAT: ${{ secrets.LAT }}
+          LONG: ${{secrets.LONG}}
+          TWI_SID: ${{secrets.TWI_SID}}
+          TWI_TOKEN: ${{secrets.TWI_TOKEN}}
+          TWI_FROM: ${{secrets.TWI_FROM}}
+          TWI_TO: ${{secrets.TWI_TO}}
+        run: python main_rain.py
