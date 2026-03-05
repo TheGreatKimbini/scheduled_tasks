@@ -1,7 +1,7 @@
 import requests
 from twilio.rest import Client
 import os
-print(os.environ.get("LAT", "MISSING"))
+
 
 account_sid = os.environ.get("TWI_SID")
 auth_token = os.environ.get("TWI_TOKEN")
