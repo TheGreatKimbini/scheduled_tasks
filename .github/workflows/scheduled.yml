@@ -42,8 +42,8 @@ jobs:
           # Your secrets are available as environment variables
           # Add more secrets in Settings > Secrets > Actions
           OWM_KEY: ${{secrets.OWM_KEY}}
-          LAT: ${{secrets.LAT}}
-          LONG: ${{secrets.LONG}}
+          
+          
           TWI_SID: ${{secrets.TWI_SID}}
           TWI_TOKEN: ${{secrets.TWI_TOKEN}}
           TWI_FROM: ${{secrets.TWI_FROM}}
