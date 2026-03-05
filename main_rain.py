@@ -6,9 +6,10 @@ print(os.environ.get("LAT", "MISSING"))
 account_sid = os.environ.get("TWI_SID")
 auth_token = os.environ.get("TWI_TOKEN")
 API_KEY = os.environ.get("OWM_KEY")
-LONG = float(os.environ.get("LONG"))
 URL = "https://api.openweathermap.org/data/2.5/forecast"
 LAT = float(os.environ.get("LAT"))
+LONG = float(os.environ.get("LONG"))
+
 
 
 params = {
