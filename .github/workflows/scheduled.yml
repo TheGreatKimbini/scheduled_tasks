@@ -44,8 +44,8 @@ jobs:
           OWM_KEY: ${{secrets.OWM_KEY}}
           
           
-          TWI_SID: ${{secrets.TWI_SID}}
-          TWI_TOKEN: ${{secrets.TWI_TOKEN}}
-          TWI_FROM: ${{secrets.TWI_FROM}}
-          TWI_TO: ${{secrets.TWI_TO}}
+          TWI_SID: ${{ secrets.TWI_SID }}
+          TWI_TOKEN: ${{ secrets.TWI_TOKEN }}
+          TWI_FROM: ${{ secrets.TWI_FROM }}
+          TWI_TO: ${{ secrets.TWI_TO }}
         run: python main_rain.py
