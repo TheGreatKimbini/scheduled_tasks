@@ -1,6 +1,7 @@
 import requests
 from twilio.rest import Client
 import os
+print(os.environ.get("LAT", "MISSING"))
 
 API_KEY = os.environ.get("OWM_KEY")
 LAT = float(os.environ.get("LAT"))
