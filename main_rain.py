@@ -3,12 +3,13 @@ from twilio.rest import Client
 import os
 print(os.environ.get("LAT", "MISSING"))
 
-API_KEY = os.environ.get("OWM_KEY")
-LAT = float(os.environ.get("LAT"))
-LONG = float(os.environ.get("LONG"))
-URL = "https://api.openweathermap.org/data/2.5/forecast"
 account_sid = os.environ.get("TWI_SID")
 auth_token = os.environ.get("TWI_TOKEN")
+API_KEY = os.environ.get("OWM_KEY")
+LONG = float(os.environ.get("LONG"))
+URL = "https://api.openweathermap.org/data/2.5/forecast"
+LAT = float(os.environ.get("LAT"))
+
 
 params = {
     "lat" : LAT,
