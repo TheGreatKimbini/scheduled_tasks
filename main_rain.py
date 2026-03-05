@@ -7,14 +7,14 @@ account_sid = os.environ.get("TWI_SID")
 auth_token = os.environ.get("TWI_TOKEN")
 API_KEY = os.environ.get("OWM_KEY")
 URL = "https://api.openweathermap.org/data/2.5/forecast"
-LAT = float(os.environ.get("LAT"))
-LONG = float(os.environ.get("LONG"))
+LAT = 36.36576025716617
+LONG = -117.00230704760706
 
 
 
 params = {
-    "lat" : LAT,
-    "lon" : LONG,
+    "lat" :  36.36576025716617,
+    "lon" : -117.00230704760706,
     "appid": API_KEY,
     "cnt": 4,
 }
